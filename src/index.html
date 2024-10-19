@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image search</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="search">
+        <form id="searchPhotoForm">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search images..."
+            name="q"
+          />
+          <button class="btn btn-search" type="submit">Search</button>
+        </form>
+      </div>
+      <span class="loader loader-off"></span>
+      <ul class="gallery"></ul>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
