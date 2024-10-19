@@ -8,4 +8,11 @@ function displayError() {
   });
 }
 
-export { displayError };
+function displayCriticalError() {
+  iziToast.error({
+    message: `Sorry, but something going wrong...!`,
+    position: 'topRight',
+  });
+}
+
+export { displayError, displayCriticalError };

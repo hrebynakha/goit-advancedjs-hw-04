@@ -1,9 +1,10 @@
 @import url('./utils/fonts.css');
 @import url('./utils/vars.css');
 @import url('./utils/reset.css');
-@import url('./components/gallery.css');
 @import url('./components/form.css');
+@import url('./components/gallery.css');
 @import url('./components/loader.css');
+@import url('./components/common.css');
 .container {
   min-width: 360px;
   max-width: 375px;

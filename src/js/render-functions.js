@@ -34,4 +34,21 @@ function getImagesMarkup(images) {
     .join('');
 }
 
-export { getImagesMarkup };
+function toggleLoadMoreButton(show, moreBtn, dataSearch = '') {
+  if (!show) {
+    moreBtn.classList.add('hide');
+    return;
+  }
+  moreBtn.classList.remove('hide');
+  moreBtn.dataset.search = dataSearch;
+}
+
+function toggleSearchEndText(show, textEl) {
+  if (!show) {
+    textEl.classList.add('hide');
+    return;
+  }
+  textEl.classList.remove('hide');
+}
+
+export { getImagesMarkup, toggleLoadMoreButton, toggleSearchEndText };
