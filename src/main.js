@@ -64,9 +64,10 @@ async function handleLoadMoreClick(e) {
       toggleSearchEndText(true, refs.searchEndText);
     }
     scrollScreen();
-    refs.loader.classList.add('loader-off');
   } catch {
     console.error(e);
     displayCriticalError();
   }
+
+  refs.loader.classList.add('loader-off');
 }
